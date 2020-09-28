@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+    div{
+        text-align: center;
+    }
+    </style>
+   
+</head>
+<body>
+    <div>
+        <input type="text">
+        <button>ADD</button>
+        <ul>
+
+        </ul>
+    </div>
+    <script>
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+        const list = document.querySelector('ul');
+        let history = [];
+        button.addEventListener('click', function(){ 
+        if(input.value !== ''){
+            history.unshift(input.value);
+            list.innerHTML = '';
+            for(let i = 0; i <history.length; i++){
+                let historyText = history[i];
+                const listItem = document.createElement('li');
+                listItem.textContent = historyText;
+                list.appendChild(listItem);
+            }
+            if(history.length>=5){
+                history.pop();
+            }
+            input.value = '';
+        }
+       })
+       </script>
+</body>
+</html>

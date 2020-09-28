@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align:center;
+    color: red;
+
+}
+ul{
+    list-style-type: none;
+
+    
+}
+ul li{
+    margin: 20px;
+    padding: 10px;
+    display: block;
+    float: left;
+    background-color: aquamarine;
+    
+}
+select{
+    margin: 20px;
+    
+}
+select option{
+    padding: 20px;
+}

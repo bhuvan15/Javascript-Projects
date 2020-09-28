@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down list</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+            display: inline-block;
+           padding: 20px;
+            
+        }
+        .dropdown_content{
+            display: none;
+            position:absolute;
+            background-color: aqua;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index :1;
+        }
+        .dropdown:hover .dropdown_content{
+            display: block;
+            
+        }
+        ul a{
+            text-decoration-line: none;
+        }
+        .dropdown_content a{
+            display: block;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <a href=""><li>HOME</li></a>
+        <a href=""><li>ABOUT</li></a>
+       <a href=""><li class="dropdown">DROPDOWN</a>
+        <div class= "dropdown_content">
+           <a href="">LINK !</a>
+           <a href="">LINK @</a>
+           <a href="">LINK #</a>
+        </li>
+        </div>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+} 
+/*nav*/ 
+.navigation{
+    background-color:honeydew ;
+    border-bottom: 2px solid cadetblue; 
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow:2px 2px 2px cadetblue; ;
+}
+nav{
+    display: flex;
+    margin-left: 400px;
+    margin-top:1px;
+    padding: 10px;
+
+}
+.navbar ul{
+    display: flex;
+    list-style-type:none;
+    align-content: right
+
+}
+.navbar{
+    margin-left: 400px;
+}
+.navbar ul li{
+  display: inline-block;
+  padding: 20px;
+}
+a{
+    text-decoration-line: none;
+    color: cadetblue;
+}
+
+.rgb{
+    text-decoration-line: underline;
+    text-decoration-color: cadetblue;
+    
+}
+.hex{
+    text-decoration-line: underline;
+    text-decoration-color: cadetblue;
+    
+}
+
+
+/*BOX*/
+.container{
+    height: 400px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 650px;
+    background-color:honeydew ;
+    text-align: center;
+    vertical-align: middle;
+    padding: 125px 0px;
+    border: 2px solid cadetblue;
+    box-shadow: 2px 2px 2px cadetblue;
+    border-radius: 10px;
+   
+    
+}
+#btn{
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid cadetblue;
+    font-family: 'Poppins', sans-serif;
+    color: cadetblue;
+    background-color: honeydew;
+    transition-duration: 0.5s;
+}
+#btn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+
+
+

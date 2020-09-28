@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        </ul>
+        <script>
+            const list = document.querySelector("ul");
+            list.innerHTML='';
+            let greetings = ["happy birthday","good morning","Merry Christmas","i wish you a very happy Christmas","good morning"];
+            for( let i = 0; i < greetings.length;i++){
+                if(greetings[i].indexOf("Christmas") !== -1){
+                  let input = greetings[i];
+                  let listItem = document.createElement('li');
+                  listItem.textContent = input;
+                  list.appendChild(listItem);
+
+                }
+            }
+        </script>
+</body>
+</html>

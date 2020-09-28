@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table{
+           height: 100%;
+           width: 100%;
+           border-collapse: collapse;
+          
+       }
+       fieldset legend{
+           text-align: center;
+           font-weight: bold;
+           font-size: 125%;
+       }
+     th,td{
+           text-align: center;
+           border-bottom: 2px solid black;
+           
+       }
+       tr:nth-child(even){
+           color: blueviolet;
+       }
+       tr:nth-child(odd){
+           color: coral;
+       }
+       tr:nth-child(even):hover{
+           background-color: black;
+           cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <header><h1>This is a time table example</h1></header>
+    <fieldset>
+        <legend>Time Table</legend>
+        <table>
+            <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            </tr>
+            <tr>
+                <td>9-10</td>
+                <td>morning</td>
+                 <td>noon</td> 
+                 <td>evening
+                 </td> 
+                
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

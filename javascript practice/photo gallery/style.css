@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{  
+  margin-left: 600px;
+  margin-top: 100px;
+
+}
+.main img{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.small-images{
+    margin-left: 400px;
+}
+.small-images img{
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    
+}
+button{
+   padding: 10px 20px;
+   background-color: white;
+   border:none;
+   cursor: pointer;
+}
